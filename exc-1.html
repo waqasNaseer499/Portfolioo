@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: aqua;
+            
+        }
+      
+
+    </style>
+ 
+</head>
+<body>
+    <div>
+       <h1> Second Large Value is </h1>
+    </div>
+    <script>
+        var arr = [23, 21, 34, 34,29,33];
+        var temp_arr = [...new Set(arr)].slice(0); //clone array
+        var second_largest_value = temp_arr.sort()[temp_arr.length - 2];
+        var index_of_largest_value = arr.indexOf(second_largest_value);
+        
+        console.log(second_largest_value);
+        document.write(second_largest_value);
+            </script>
+</body>
+</html>
